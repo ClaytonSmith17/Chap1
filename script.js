@@ -424,4 +424,147 @@
 // callbacks and foreach
 
 // let people = ['kyron', 'regan', 'clayton']
-// const logPerson = (Person,Index)
+// const logPerson = (person, index) => {
+//     console.log(`${index} - hello ${person}`);
+// };
+// people.forEach(logPerson);
+
+//Callback functions in action
+// const ul = document.querySelector('.people');
+// const people = ['kyron', 'regan', 'clayton'];
+// let html = ``;
+// people.forEach(person => {
+//     //create html template
+//     html += `<li style="color; purple">${person}</li>`;
+// });
+// console.log(html);
+// ul.innerHTML = html;
+
+// //Object Literals
+// //creating an object literal
+// let user = {
+//     name: 'crystal',
+//     age: 30,
+//     email: 'claytonsmith11@outlook.com',
+//     location: 'United Kingdom',
+//     blogs: ['Why mac and cheese rules', '10 things to make with marmite']
+// };
+
+// console.log(user);
+// console.log(user.name);
+
+// console.log(user.age);
+// console.log(user['location']);
+// user['name'] = 'clayton';
+// console.log(user['name']);
+// console.log(typeof user);
+
+// // Adding methods
+// let user = {
+//     name: 'crystal',
+//     age: 30,
+//     email: 'claytonsmith11@outlook.com',
+//     location: 'United Kingdom',
+//     blogs: ['Why mac and cheese rules', '10 things to make with marmite'],
+//     login: function () {
+//         console.log('The user logged in');
+//     },
+//     logout: function () {
+//         console.log('The user logged out');
+//     },
+//     logBlogs: function() {
+//     }
+// };
+
+// user.login();
+// user.logout();
+// const name = 'clayton';
+// name.toUpperCase();
+
+// 'This' Keyword
+
+// Adding methods
+// let user = {
+//     name: 'clayton',
+//     age: 30,
+//     email: 'claytonsmith11@outlook.com',
+//     location: 'United Kingdom',
+//     blogs: ['Why mac and cheese rules', '10 things to make with marmite'],
+//     login: function () {
+//         console.log('The user logged in');
+//     },
+//     logout: function () {
+//         console.log('The user logged out');
+//     },
+//     logBlogs: function () {
+//         // console.log(this.blogs);
+//         console.log('this user has written the following blogs: ');
+//         this.blogs.forEach(blog => {
+//             console.log(blog);
+//         })
+//     }
+// };
+
+// user.logBlogs();
+// console.log(this);
+
+// Objects Literals
+// const blogs = [
+//     { title: 'Why mac and cheese rules', likes: 30 },
+//     { title: '10 things to make with marmite', likes: 50 }
+// ];
+
+// let user = {
+//         name: 'clayton',
+//         age: 30,
+//         email: 'claytonsmith11@outlook.com',
+//         location: 'United Kingdom',
+//         blogs: [
+//             { title: 'Why mac and cheese rules', likes: 30 },
+//             { title: '10 things to make with marmite', likes: 50 }
+//         ],
+//         login: function () {
+//             console.log('The user logged in');
+//         },
+//         logout: function () {
+//             console.log('The user logged out');
+//         },
+//         logBlogs: function () {
+//             // console.log(this.blogs);
+//             console.log('this user has written the following blogs: ');
+//             this.blogs.forEach(blog => {
+//                 console.log(blog.title, blog.likes);
+//             })
+//         }
+// };
+
+// user.logBlogs();
+
+// Math Objects
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(Math.E);
+
+// const area = 7.7;
+
+// console.log(Math.round(area));
+// console.log(Math.floor(area));
+// console.log(Math.ceil(area));
+// console.log(Math.trunc(area));
+// //random numbers
+// const random = Math.random();
+// console.log(random)
+
+// Primitive values
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+
+// Reference Values
+// const userOne = { name: 'Regan', age: 30 };
+// const userTwo = userOne;
+// console.log(userOne, userTwo);
+// userOne.name = 40;
+// console.log(userOne, userTwo);
+
+//DOM Explained
