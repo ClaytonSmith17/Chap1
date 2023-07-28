@@ -581,3 +581,27 @@
 // const paras = document.getElementsByTagName('p');
 // console.log(paras);
 // console.log(paras[1]);
+
+// adding and changing page content
+
+const para = document.querySelector('p');
+
+// console.log(para.innerText);
+// para.innerText = 'Clayton is awesome';
+
+const paras = document.querySelectorAll('p');
+
+// paras.forEach(para => {
+//     console.log(para.innerText);
+//     para.innerText += ' new text';
+// });
+
+const content = document.querySelector('.content');
+
+// console.log(content.innerHTML);
+// content.innerHTML += '<h2>THIS IS A NEW H2 </h2>';
+
+// const people = ['kyron', 'regan', 'clayton'];
+// people.forEach(person => {
+//     content.innerHTML += `<p>${person}</p>`;
+// });
